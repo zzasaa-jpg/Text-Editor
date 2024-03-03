@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>Text-Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body id="body">
+    <div class="container">
+        <nav>
+            <button onclick="handleBold()" id="Bold"><span class="material-symbols-outlined">
+                    format_bold
+                </span></button>
+            <button onclick="handleItalic()" id="Italic"><span class="material-symbols-outlined">
+                    format_italic
+                </span></button>
+            <button onclick="handleTextLeft()" id="Left"> <span class="material-symbols-outlined">
+                    format_align_left
+                </span></button>
+            <button onclick="handleTextCenter()" id="center"><span class="material-symbols-outlined">
+                    format_align_center
+                </span></button>
+            <button onclick="handleTextRight()" id="right"><span class="material-symbols-outlined">
+                    format_align_right
+                </span></button>
+            <button onclick="handleUpperCase()" id="UpperCase">AA</button>
+            <button onclick="handleLowerCase()" id="LowerCase">aa</button>
+            <button onclick="handleCapitalize()" id="Capitalize">Aa</button>
+            <button onclick="handleClear()" id="Clear">Clear text</button>
+            <button onclick="DarkMode()" id="open">Dark
+                Mode</button>
+        </nav>
+        <textarea id="text-area"></textarea>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
