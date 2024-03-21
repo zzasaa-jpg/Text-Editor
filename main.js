@@ -89,3 +89,36 @@ function DarkMode() {
         })
     }
 }
+
+function Speack() {
+    let textarea = document.getElementById("text-area");
+    let number = document.getElementById("number");
+    let lan = document.getElementById("lan");
+    if (textarea.value.trim() === "") {
+        alert("Editor is blank")
+    }
+    let utterance = new SpeechSynthesisUtterance(textarea.value);
+    utterance.lang = lan.value;
+
+    let voices = speechSynthesis.getVoices()
+    utterance.voice = voices[0];
+
+    for (let index = 1; index < number.value; index++) {
+        speechSynthesis.speak(utterance)
+    }
+    speechSynthesis.speak(utterance)
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    let textarea = document.getElementById("text-area");
+
+    if (localStorage.getItem("Text-value")) {
+        let storedValue = localStorage.getItem("Text-value");
+        textarea.value = storedValue;
+    }
+
+    textarea.addEventListener("input", function () {
+        localStorage.setItem("Text-value", textarea.value);
+    });
+});
+

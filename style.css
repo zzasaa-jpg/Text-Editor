@@ -40,3 +40,11 @@ nav button:hover {
     font-family: sans-serif;
     padding: 0px 5px;
 }
+
+#number {
+    width: 26px;
+}
+
+#lan {
+    width: 32px;
+}
