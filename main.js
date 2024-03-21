@@ -71,9 +71,11 @@ function handleClear() {
 function DarkMode() {
     let body = document.body;
     let textarea = document.getElementById("text-area");
-    let currentColor = body.style.backgroundColor;
+    let computedStyle = window.getComputedStyle(body);
+    let currentColor = computedStyle.backgroundColor;
     let btn = document.querySelectorAll("button")
-    if (currentColor === "darkslategrey") {
+    
+    if (currentColor === "rgb(36, 38, 43)" || currentColor === "#24262B") {
         body.style.backgroundColor = "white"
         textarea.style.backgroundColor = "white"
         textarea.style.color = 'black'
@@ -81,8 +83,8 @@ function DarkMode() {
             btn.style.color = "black";
         })
     } else {
-        body.style.backgroundColor = "darkslategrey"
-        textarea.style.backgroundColor = "darkslategrey"
+        body.style.backgroundColor = "#24262B"
+        textarea.style.backgroundColor = "#24262B"
         textarea.style.color = 'white'
         btn.forEach(btn => {
             btn.style.color = "white"

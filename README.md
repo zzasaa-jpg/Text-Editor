@@ -39,3 +39,15 @@ Remove the text from editor.
 ### `Dark Mode`
 
 Apply the Dark Mode.
+
+### `Read Aloud`
+
+Reading Aloud text.
+
+### `Input box for multiple times function run`
+
+Minimum 1 time Maximum 10 times.
+
+### `Languages`
+
+Languages are English and Hindi.
