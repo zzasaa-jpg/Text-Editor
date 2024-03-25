@@ -13,7 +13,7 @@
 
 <body id="body">
     <div class="container">
-        <nav>
+        <nav id="nav">
             <button onclick="handleBold()" id="Bold"><span class="material-symbols-outlined">
                     format_bold
                 </span></button>
@@ -29,13 +29,16 @@
             <button onclick="handleTextRight()" id="right"><span class="material-symbols-outlined">
                     format_align_right
                 </span></button>
+            <button onclick="handleTextJustify()" id="right"><span class="material-symbols-outlined">
+                    format_align_right
+                </span></button>
             <button onclick="handleUpperCase()" id="UpperCase">AA</button>
             <button onclick="handleLowerCase()" id="LowerCase">aa</button>
             <button onclick="handleCapitalize()" id="Capitalize">Aa</button>
             <button onclick="handleClear()" id="Clear">Clear text</button>
             <button onclick="DarkMode()" id="open">Dark
                 Mode</button>
-            <button onclick="Speack()" id="open">Read Aloud</button>
+            <button onclick="Speak()" id="open">Read Aloud</button>
             <input type="number" id="number" min="1" max="10">
             <select id="lan">
                 <option value="en-US">EN</option>
