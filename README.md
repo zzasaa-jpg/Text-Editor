@@ -1,5 +1,11 @@
 # This is Simple Text-Editor from HTML, CSS, JAVA SCRIPT
 
+## Details of stack, third party, programming language
+- FrontEnd
+- No third party
+- Java script
+
+## website main functionality
 ### `B`
 
 B for bold the font style.
@@ -51,3 +57,7 @@ Minimum 1 time Maximum 10 times.
 ### `Languages`
 
 Languages are English and Hindi.
+
+## website images
+
+<a href="https://txt-edt-app.netlify.app/" target="_blank">website link</a>
