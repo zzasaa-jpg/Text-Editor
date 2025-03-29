@@ -58,6 +58,4 @@ Minimum 1 time Maximum 10 times.
 
 Languages are English and Hindi.
 
-## website images
-
 <a href="https://txt-edt-app.netlify.app/" target="_blank">website link</a>
